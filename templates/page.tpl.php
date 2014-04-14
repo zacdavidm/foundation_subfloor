@@ -17,9 +17,9 @@
       <?php endif; ?>
         <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
           <?php if($off_canvas): ?> 
-            <div class="left">
+            <section class="left-small">
               <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-            </div>
+            </section>
           <?php endif; ?>
           <ul class="title-area">
             <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
