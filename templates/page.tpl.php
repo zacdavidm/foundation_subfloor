@@ -17,7 +17,7 @@
       <?php endif; ?>
         <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
           <?php if($off_canvas): ?> 
-            <div class="leftl">
+            <div class="left">
               <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
             </div>
           <?php endif; ?>
