@@ -2,11 +2,6 @@
 <?php if($off_canvas): ?>    
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
-    <nav class="tab-bar">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-      </section>
-    </nav>
 <?php endif; ?>
 
 <!--.page -->
@@ -15,12 +10,17 @@
   <!--.l-header region -->
   <header role="banner" class="l-header">
 
-    <?php if ($top_bar): ?>
+    <?php if ($top_bar || $off_canvas): ?>
       <!--.top-bar -->
       <?php if ($top_bar_classes): ?>
       <div class="<?php print $top_bar_classes; ?>">
       <?php endif; ?>
         <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
+          <?php if($off_canvas): ?> 
+            <div class="leftl">
+              <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+            </div>
+          <?php endif; ?>
           <ul class="title-area">
             <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
             <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
