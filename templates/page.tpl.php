@@ -1,3 +1,14 @@
+<?php $off_canvas=render($page['off_canvas']); ?>
+<?php if($off_canvas): ?>    
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+    </nav>
+<?php endif; ?>
+
 <!--.page -->
 <div role="document" class="page">
 
@@ -221,3 +232,12 @@
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
 <!--/.page -->
+
+<?php if($off_canvas): ?>
+    <aside class="left-off-canvas-menu">
+      <?php print $off_canvas; ?>
+    </aside>
+    <a class="exit-off-canvas"></a>
+  </div>
+</div>
+<?php endif; ?>
