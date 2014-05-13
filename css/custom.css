@@ -24,11 +24,6 @@
   color: #666666;
   font-size: 0.923rem;
 }
-/* allow top-bar/tab-bar combination*/
-
-.off-canvas-wrap .top-bar .title-area{
-  padding-left:2.8125rem;
-}
 
 section.left-small{
   left:0 !important;

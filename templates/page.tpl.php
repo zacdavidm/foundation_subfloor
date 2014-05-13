@@ -1,26 +1,15 @@
-<?php $off_canvas=render($page['off_canvas']); ?>
-<?php if($off_canvas): ?>    
-<div class="off-canvas-wrap" data-offcanvas>
-  <div class="inner-wrap">
-<?php endif; ?>
-
 <!--.page -->
 <div role="document" class="page">
 
   <!--.l-header region -->
   <header role="banner" class="l-header">
 
-    <?php if ($top_bar || $off_canvas): ?>
+    <?php if ($top_bar): ?>
       <!--.top-bar -->
       <?php if ($top_bar_classes): ?>
       <div class="<?php print $top_bar_classes; ?>">
       <?php endif; ?>
         <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
-          <?php if($off_canvas): ?> 
-            <section class="left-small">
-              <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-            </section>
-          <?php endif; ?>
           <ul class="title-area">
             <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
             <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
@@ -232,12 +221,3 @@
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
 <!--/.page -->
-
-<?php if($off_canvas): ?>
-    <aside class="left-off-canvas-menu">
-      <?php print $off_canvas; ?>
-    </aside>
-    <a class="exit-off-canvas"></a>
-  </div>
-</div>
-<?php endif; ?>
