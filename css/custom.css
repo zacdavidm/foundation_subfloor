@@ -28,3 +28,38 @@
 section.left-small{
   left:0 !important;
 }
+
+.contain-to-grid,
+.breadcrumbs,
+.block:not(.block-nodeblock),
+.node:not(.node-content-stream)
+{
+  padding: .5rem;
+  margin: 1rem 0;
+}
+
+.contain-to-grid,
+.block:not(.block-nodeblock),
+.node:not(.node-content-stream){
+  background-color: white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #BDBDBD;
+  border-bottom: 1px solid #999999;
+  border-right: 1px solid #999;
+  -moz-box-shadow: 1px 1px 2px 0 #B4B4B4;
+  -webkit-box-shadow: 1px 1px 2px 0 #B4B4B4;
+  box-shadow: 1px 1px 2px 0 #B4B4B4;
+}
+
+
+.contain-to-grid{
+border-right:0;
+border-left:0;
+}
+
+.node:after{
+  content: " ";
+  display: table;
+  clear:both;
+}
