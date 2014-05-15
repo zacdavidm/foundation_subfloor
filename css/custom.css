@@ -29,6 +29,11 @@ section.left-small{
   left:0 !important;
 }
 
+body,
+.left-off-canvas-menu{
+  background:#EBEBEB;
+}
+
 .contain-to-grid,
 .breadcrumbs,
 .block:not(.block-nodeblock),
