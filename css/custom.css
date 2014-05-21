@@ -68,3 +68,54 @@ border-left:0;
   display: table;
   clear:both;
 }
+
+/*
+ * Top bar color taming
+ */
+
+.top-bar{
+  color:#222222;
+  background-color:#fff;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+  background-color:#F0F0F0;
+}
+
+.top-bar-section .has-dropdown > a:after{
+    border-left-color: rgba(0, 0, 0, 0.4);
+  }
+
+.top-bar.expanded .title-area,
+.top-bar .name h1,
+.top-bar .name h1 a,
+.top-bar .toggle-topbar.menu-icon a,
+.top-bar-section,
+.top-bar-section ul,
+.top-bar-section .dropdown,
+.top-bar-section .dropdown li.title h5 a,
+.top-bar-section li:not(.has-form),
+.top-bar-section li:not(.has-form) a:not(.button){
+  color:inherit;
+  background-color:inherit;
+}
+
+.top-bar .toggle-topbar.menu-icon a::after{
+  -webkit-box-shadow: 0 10px 0 1px, 0 16px 0 1px, 0 22px 0 1px;
+  box-shadow: 0 10px 0 1px, 0 16px 0 1px, 0 22px 0 1px;
+}
+.top-bar.expanded .toggle-topbar a span{
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+.node .image,
+.node .field{
+margin-bottom:1rem;
+}
+@media only screen and (min-width: 40.063em){
+
+  .top-bar-section .has-dropdown > a:after{
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-left-color:transparent;
+  }
+  
+}
