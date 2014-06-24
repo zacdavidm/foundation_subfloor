@@ -1,3 +1,23 @@
+/*Reset header sizes. way too big */
+h1{
+  font-size:2rem;
+}
+h2{
+  font-size:1.5rem;
+}
+h3{
+  font-size:1.17rem;
+}
+h4{
+  font-size:1rem;
+}
+h5{
+  font-size:.83rem;
+}
+h6{
+  font-size:.67rem;
+}
+
 /* line 48, ../scss/components/_inline-lists.scss */
 .links.inline{
   margin: 0 auto 1.0625rem auto;
